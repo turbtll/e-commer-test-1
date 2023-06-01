@@ -1,0 +1,27 @@
+{
+  "name": "test-backend",
+  "version": "1.0.0",
+  "description": "e-comm test backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "author": "Tur",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.1",
+    "stripe": "^12.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.5",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
